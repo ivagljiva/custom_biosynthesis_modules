@@ -1,0 +1,40 @@
+ENTRY       B02_00
+NAME        Riboflavin (B2) biosynthesis
+DEFINITION  (K01497,K14652) (K01498 K00082,K11752) (K22912,K20860,K20861,K20862,K21063,K21064) (K02858,K14652) K00794 K00793 (K20884 K22949,K11753)
+ORTHOLOGY   K01497  GTP cyclohydrolase II [EC:3.5.4.25]
+            K22912  5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase [EC:3.1.3.104]
+            K01498  diaminohydroxyphosphoribosylaminopyrimidine deaminase [EC:3.5.4.26]
+            K00794  6,7-dimethyl-8-ribityllumazine synthase [EC:2.5.1.78]
+            K11753  riboflavin kinase / FMN adenylyltransferase [EC:2.7.1.26 2.7.7.2]
+            K20884  riboflavin kinase / FMN hydrolase [EC:2.7.1.26 3.1.3.102]
+            K14652  3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II [EC:4.1.99.12 3.5.4.25]
+            K00082  5-amino-6-(5-phosphoribosylamino)uracil reductase [EC:1.1.1.193]
+            K00793  riboflavin synthase [EC:2.5.1.9]
+            K20860  FMN hydrolase / 5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase [EC:3.1.3.102 3.1.3.104]
+            K21063  5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase [EC:3.1.3.104]
+            K21064  5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase [EC:3.1.3.104]
+            K22949  FAD synthetase [EC:2.7.7.2]
+            K20861  FMN hydrolase / 5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase [EC:3.1.3.102 3.1.3.104]
+            K11752  diaminohydroxyphosphoribosylaminopyrimidine deaminase / 5-amino-6-(5-phosphoribosylamino)uracil reductase [EC:3.5.4.26 1.1.1.193]
+            K02858  3,4-dihydroxy 2-butanone 4-phosphate synthase [EC:4.1.99.12]
+            K20862  FMN hydrolase / 5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase [EC:3.1.3.102 3.1.3.104]
+CLASS       User modules; Biosynthesis; Vitamin Biosynthesis
+PATHWAY     map00740
+ANNOTATION_SOURCE  K01497  KOfam
+                   K22912  KOfam
+                   K01498  KOfam
+                   K00794  KOfam
+                   K11753  KOfam
+                   K20884  KOfam
+                   K14652  KOfam
+                   K00082  KOfam
+                   K00793  KOfam
+                   K20860  KOfam
+                   K21063  KOfam
+                   K21064  KOfam
+                   K22949  KOfam
+                   K20861  KOfam
+                   K11752  KOfam
+                   K02858  KOfam
+                   K20862  KOfam
+///

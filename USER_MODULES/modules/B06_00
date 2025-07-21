@@ -1,0 +1,24 @@
+ENTRY       B06_00
+NAME        Pyroxidine (B6) biosynthesis
+DEFINITION  K06215+K08681,(K03472 K03473 K00831 K00097 K03474 (K00275,K23998))
+ORTHOLOGY   K00275  pyridoxamine 5'-phosphate oxidase [EC:1.4.3.5]
+            K03473  erythronate-4-phosphate dehydrogenase [EC:1.1.1.290]
+            K08681  pyridoxal 5'-phosphate synthase pdxT subunit [EC:4.3.3.6]
+            K23998  pyridoxal 5'-phosphate synthase / NAD(P)H-hydrate epimerase [EC:1.4.3.5 5.1.99.6]
+            K00097  4-hydroxythreonine-4-phosphate dehydrogenase [EC:1.1.1.262]
+            K03474  pyridoxine 5-phosphate synthase [EC:2.6.99.2]
+            K00831  phosphoserine aminotransferase [EC:2.6.1.52]
+            K03472  D-erythrose 4-phosphate dehydrogenase [EC:1.2.1.72]
+            K06215  pyridoxal 5'-phosphate synthase pdxS subunit [EC:4.3.3.6]
+CLASS       User modules; Biosynthesis; Vitamin Biosynthesis
+PATHWAY     map00750
+ANNOTATION_SOURCE  K00275  KOfam
+                   K03473  KOfam
+                   K08681  KOfam
+                   K23998  KOfam
+                   K00097  KOfam
+                   K03474  KOfam
+                   K00831  KOfam
+                   K03472  KOfam
+                   K06215  KOfam
+///

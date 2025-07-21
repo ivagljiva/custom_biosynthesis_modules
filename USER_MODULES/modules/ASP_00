@@ -1,0 +1,18 @@
+ENTRY       ASP_00
+NAME        Aspartate biosynthesis
+DEFINITION  (K01958,K01959+K01960) (K00812,K00813,K11358)
+ORTHOLOGY   K00812  aspartate aminotransferase [EC:2.6.1.1]
+            K01958  pyruvate carboxylase [EC:6.4.1.1]
+            K00813  aspartate aminotransferase [EC:2.6.1.1]
+            K01959  pyruvate carboxylase subunit A [EC:6.4.1.1]
+            K11358  aspartate aminotransferase [EC:2.6.1.1]
+            K01960  pyruvate carboxylase subunit B [EC:6.4.1.1]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00620;map00250
+ANNOTATION_SOURCE  K00812  KOfam
+                   K01958  KOfam
+                   K00813  KOfam
+                   K01959  KOfam
+                   K11358  KOfam
+                   K01960  KOfam
+///

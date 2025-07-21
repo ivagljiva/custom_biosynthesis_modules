@@ -1,0 +1,62 @@
+ENTRY       B09_00
+NAME        Folic Acid (B9) biosynthesis
+DEFINITION  ((K14652,K01497) K22100 -- (K01633,K13939,K13940,K09739)),((K01495,K09007,K22391) (K22101,((K01077,K01113),(K08310,K19965) (K13939,K13940,K01633,K09739)))) (((K00950,K13941,K13939,K13940,K07142) (K13941,K00796,K13939,K24102,K18974,K18824,K18825)),((K13941,K00796,K13939,K24102,K18974,K18824,K18825))) (K22099,K11754,K20457) (K00287,K13998)
+ORTHOLOGY   K22101  dihydroneopterin triphosphate aldolase (PTPS-III) / 6-pyruvoyltetrahydropterin synthase [EC:4.1.2.60 4.2.3.12]
+            K18974  dihydropteroate synthase type 1 [EC:2.5.1.15]
+            K01495  GTP cyclohydrolase IA [EC:3.5.4.16]
+            K18824  dihydropteroate synthase type 2 [EC:2.5.1.15]
+            K22099  dihydrofolate synthase / folylpolyglutamate synthase [EC:6.3.2.12 6.3.2.17]
+            K22391  GTP cyclohydrolase I [EC:3.5.4.16]
+            K09007  GTP cyclohydrolase IB [EC:3.5.4.16]
+            K00950  2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase [EC:2.7.6.3]
+            K13939  dihydroneopterin aldolase / 2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase / dihydropteroate synthase [EC:4.1.2.25 2.7.6.3 2.5.1.15]
+            K11754  dihydrofolate synthase / folylpolyglutamate synthase [EC:6.3.2.12 6.3.2.17]
+            K00796  dihydropteroate synthase [EC:2.5.1.15]
+            K01077  alkaline phosphatase [EC:3.1.3.1]
+            K01497  GTP cyclohydrolase II [EC:3.5.4.25]
+            K01113  alkaline phosphatase D [EC:3.1.3.1]
+            K24102  dihydrofolate synthase / dihydropteroate synthase [EC:6.3.2.12 2.5.1.15]
+            K14652  3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II [EC:4.1.99.12 3.5.4.25]
+            K22100  2,5-diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one isomerase/dehydratase [EC:4.2.1.160]
+            K00287  dihydrofolate reductase [EC:1.5.1.3]
+            K19965  dihydroneopterin triphosphate pyrophosphohydrolase [EC:3.6.1.67]
+            K09739  dihydroneopterin aldolase [EC:4.1.2.25]
+            K13940  dihydroneopterin aldolase / 2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase [EC:4.1.2.25 2.7.6.3]
+            K07142  2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase [EC:2.7.6.3]
+            K18825  dihydropteroate synthase type 3 [EC:2.5.1.15]
+            K08310  dihydroneopterin triphosphate diphosphatase [EC:3.6.1.67]
+            K01633  7,8-dihydroneopterin aldolase/epimerase/oxygenase [EC:4.1.2.25 5.1.99.8 1.13.11.81]
+            K13998  dihydrofolate reductase / thymidylate synthase [EC:1.5.1.3 2.1.1.45]
+            K13941  2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase / dihydropteroate synthase [EC:2.7.6.3 2.5.1.15]
+            K20457  dihydrofolate synthase [EC:6.3.2.12]
+CLASS       User modules; Biosynthesis; Vitamin Biosynthesis
+PATHWAY     map00790
+ANNOTATION_SOURCE  K22101  KOfam
+                   K18974  KOfam
+                   K01495  KOfam
+                   K18824  KOfam
+                   K22099  KOfam
+                   K22391  KOfam
+                   K09007  KOfam
+                   K00950  KOfam
+                   K13939  KOfam
+                   K11754  KOfam
+                   K00796  KOfam
+                   K01077  KOfam
+                   K01497  KOfam
+                   K01113  KOfam
+                   K24102  KOfam
+                   K14652  KOfam
+                   K22100  KOfam
+                   K00287  KOfam
+                   K19965  KOfam
+                   K09739  KOfam
+                   K13940  KOfam
+                   K07142  KOfam
+                   K18825  KOfam
+                   K08310  KOfam
+                   K01633  KOfam
+                   K13998  KOfam
+                   K13941  KOfam
+                   K20457  KOfam
+///

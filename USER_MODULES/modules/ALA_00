@@ -1,0 +1,8 @@
+ENTRY       ALA_00
+NAME        Alanine biosynthesis
+DEFINITION  K14260
+ORTHOLOGY   K14260  alanine-synthesizing transaminase [EC:2.6.1.66 2.6.1.2]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00250
+ANNOTATION_SOURCE  K14260  KOfam
+///

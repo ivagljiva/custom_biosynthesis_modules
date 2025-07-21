@@ -1,0 +1,66 @@
+ENTRY       B12_00
+NAME        Cobalamin (B12) - aerobic biosynthesis
+DEFINITION  (K02303,K13542,K02302,K00589,K02496,K13543) (K03394,K13540) K02229 (K05934,K13540,K13541) K05936 K02228 K05895 K00595 K06042 K02224 K02230+K09882+K09883 (K00798,K19221) K02232 (K02225,K02227) K02231 K00768 (K02226,K22316) K02233
+ORTHOLOGY   K13542  uroporphyrinogen III methyltransferase / synthase [EC:2.1.1.107 4.2.1.75]
+            K09882  cobaltochelatase CobS [EC:6.6.1.2]
+            K13540  precorrin-2 C20-methyltransferase / precorrin-3B C17-methyltransferase [EC:2.1.1.130 2.1.1.131]
+            K02228  precorrin-6A synthase [EC:2.1.1.152]
+            K02230  cobaltochelatase CobN [EC:6.6.1.2]
+            K02302  uroporphyrin-III C-methyltransferase / precorrin-2 dehydrogenase / sirohydrochlorin ferrochelatase [EC:2.1.1.107 1.3.1.76 4.99.1.4]
+            K03394  precorrin-2/cobalt-factor-2 C20-methyltransferase [EC:2.1.1.130 2.1.1.151]
+            K02227  adenosylcobinamide-phosphate synthase [EC:6.3.1.10]
+            K05895  precorrin-6A/cobalt-precorrin-6A reductase [EC:1.3.1.54 1.3.1.106]
+            K06042  precorrin-8X/cobalt-precorrin-8 methylmutase [EC:5.4.99.61 5.4.99.60]
+            K02226  alpha-ribazole phosphatase [EC:3.1.3.73]
+            K02229  precorrin-3B synthase [EC:1.14.13.83]
+            K02231  adenosylcobinamide kinase / adenosylcobinamide-phosphate guanylyltransferase [EC:2.7.1.156 2.7.7.62]
+            K00595  precorrin-6B C5,15-methyltransferase / cobalt-precorrin-6B C5,C15-methyltransferase [EC:2.1.1.132 2.1.1.289 2.1.1.196]
+            K09883  cobaltochelatase CobT [EC:6.6.1.2]
+            K13541  cobalt-precorrin 5A hydrolase / cobalt-factor III methyltransferase / precorrin-3B C17-methyltransferase [EC:3.7.1.12 2.1.1.272 2.1.1.131]
+            K02496  uroporphyrin-III C-methyltransferase [EC:2.1.1.107]
+            K00589  uroporphyrin-III C-methyltransferase [EC:2.1.1.107]
+            K19221  cob(I)alamin adenosyltransferase [EC:2.5.1.17]
+            K02233  adenosylcobinamide-GDP ribazoletransferase [EC:2.7.8.26]
+            K05934  precorrin-3B C17-methyltransferase / cobalt-factor III methyltransferase [EC:2.1.1.131 2.1.1.272]
+            K02303  uroporphyrin-III C-methyltransferase [EC:2.1.1.107]
+            K02224  cobyrinic acid a,c-diamide synthase [EC:6.3.5.9 6.3.5.11]
+            K00768  nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase [EC:2.4.2.21]
+            K22316  ribonuclease H / adenosylcobalamin/alpha-ribazole phosphatase [EC:3.1.26.4 3.1.3.73]
+            K13543  uroporphyrinogen III methyltransferase / synthase [EC:2.1.1.107 4.2.1.75]
+            K00798  cob(I)alamin adenosyltransferase [EC:2.5.1.17]
+            K02232  adenosylcobyric acid synthase [EC:6.3.5.10]
+            K05936  precorrin-4/cobalt-precorrin-4 C11-methyltransferase [EC:2.1.1.133 2.1.1.271]
+            K02225  cobalamin biosynthesis protein CobC
+CLASS       User modules; Biosynthesis; Vitamin Biosynthesis
+PATHWAY     map00860
+ANNOTATION_SOURCE  K13542  KOfam
+                   K09882  KOfam
+                   K13540  KOfam
+                   K02228  KOfam
+                   K02230  KOfam
+                   K02302  KOfam
+                   K03394  KOfam
+                   K02227  KOfam
+                   K05895  KOfam
+                   K06042  KOfam
+                   K02226  KOfam
+                   K02229  KOfam
+                   K02231  KOfam
+                   K00595  KOfam
+                   K09883  KOfam
+                   K13541  KOfam
+                   K02496  KOfam
+                   K00589  KOfam
+                   K19221  KOfam
+                   K02233  KOfam
+                   K05934  KOfam
+                   K02303  KOfam
+                   K02224  KOfam
+                   K00768  KOfam
+                   K22316  KOfam
+                   K13543  KOfam
+                   K00798  KOfam
+                   K02232  KOfam
+                   K05936  KOfam
+                   K02225  KOfam
+///

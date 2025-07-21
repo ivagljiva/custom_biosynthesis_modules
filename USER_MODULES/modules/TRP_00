@@ -1,0 +1,36 @@
+ENTRY       TRP_00
+NAME        Tryptophan biosynthesis
+DEFINITION  (((K01657+K01658,K13503,K13501,K01656) K00766),K13497) (((K01817,K24017) (K01656,K01609)),K13498,K13501) (K01695+(K01696,K06001),K01694)
+ORTHOLOGY   K13497  anthranilate synthase/phosphoribosyltransferase [EC:4.1.3.27 2.4.2.18]
+            K13501  anthranilate synthase / indole-3-glycerol phosphate synthase / phosphoribosylanthranilate isomerase [EC:4.1.3.27 4.1.1.48 5.3.1.24]
+            K13498  indole-3-glycerol phosphate synthase / phosphoribosylanthranilate isomerase [EC:4.1.1.48 5.3.1.24]
+            K01609  indole-3-glycerol phosphate synthase [EC:4.1.1.48]
+            K01817  phosphoribosylanthranilate isomerase [EC:5.3.1.24]
+            K01694  tryptophan synthase [EC:4.2.1.20]
+            K13503  anthranilate synthase [EC:4.1.3.27]
+            K00766  anthranilate phosphoribosyltransferase [EC:2.4.2.18]
+            K24017  phosphoribosyl isomerase A [EC:5.3.1.16 5.3.1.24]
+            K01657  anthranilate synthase component I [EC:4.1.3.27]
+            K01696  tryptophan synthase beta chain [EC:4.2.1.20]
+            K01658  anthranilate synthase component II [EC:4.1.3.27]
+            K06001  tryptophan synthase beta chain [EC:4.2.1.20]
+            K01695  tryptophan synthase alpha chain [EC:4.2.1.20]
+            K01656  anthranilate synthase / indole-3-glycerol phosphate synthase [EC:4.1.3.27 4.1.1.48]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00400
+ANNOTATION_SOURCE  K13497  KOfam
+                   K13501  KOfam
+                   K13498  KOfam
+                   K01609  KOfam
+                   K01817  KOfam
+                   K01694  KOfam
+                   K13503  KOfam
+                   K00766  KOfam
+                   K24017  KOfam
+                   K01657  KOfam
+                   K01696  KOfam
+                   K01658  KOfam
+                   K06001  KOfam
+                   K01695  KOfam
+                   K01656  KOfam
+///

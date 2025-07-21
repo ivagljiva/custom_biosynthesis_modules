@@ -1,0 +1,8 @@
+ENTRY       GLN_00
+NAME        Glutamine biosynthesis
+DEFINITION  K01915
+ORTHOLOGY   K01915  glutamine synthetase [EC:6.3.1.2]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00250
+ANNOTATION_SOURCE  K01915  KOfam
+///

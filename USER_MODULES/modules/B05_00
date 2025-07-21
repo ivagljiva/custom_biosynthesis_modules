@@ -1,0 +1,30 @@
+ENTRY       B05_00
+NAME        Pantothenic Acid (B5) biosynthesis
+DEFINITION  K00826 K00606 (K00077,K24263) ((K01579,K24264,K18933,K18966),K13367 K00128) (K01918,K13799)
+ORTHOLOGY   K00826  branched-chain amino acid aminotransferase [EC:2.6.1.42]
+            K13799  pantoate ligase / CMP/dCMP kinase [EC:6.3.2.1 2.7.4.25]
+            K01579  aspartate 1-decarboxylase [EC:4.1.1.11]
+            K13367  polyamine oxidase [EC:1.5.3.17]
+            K01918  pantoate--beta-alanine ligase [EC:6.3.2.1]
+            K00606  3-methyl-2-oxobutanoate hydroxymethyltransferase [EC:2.1.2.11]
+            K00077  2-dehydropantoate 2-reductase [EC:1.1.1.169]
+            K18966  sulfinoalanine decarboxylase / aspartate 1-decarboxylase [EC:4.1.1.29 4.1.1.11]
+            K00128  aldehyde dehydrogenase (NAD+) [EC:1.2.1.3]
+            K24263  2-dehydropantoate 2-reductase [EC:1.1.1.169]
+            K24264  aspartate 1-decarboxylase [EC:4.1.1.11]
+            K18933  tyrosine decarboxylase / aspartate 1-decarboxylase [EC:4.1.1.25 4.1.1.11]
+CLASS       User modules; Biosynthesis; Vitamin Biosynthesis
+PATHWAY     map00770
+ANNOTATION_SOURCE  K00826  KOfam
+                   K13799  KOfam
+                   K01579  KOfam
+                   K13367  KOfam
+                   K01918  KOfam
+                   K00606  KOfam
+                   K00077  KOfam
+                   K18966  KOfam
+                   K00128  KOfam
+                   K24263  KOfam
+                   K24264  KOfam
+                   K18933  KOfam
+///

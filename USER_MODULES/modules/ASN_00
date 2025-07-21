@@ -1,0 +1,10 @@
+ENTRY       ASN_00
+NAME        Asparagine biosynthesis
+DEFINITION  (K01914,K01953)
+ORTHOLOGY   K01914  aspartate--ammonia ligase [EC:6.3.1.1]
+            K01953  asparagine synthase (glutamine-hydrolysing) [EC:6.3.5.4]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00250
+ANNOTATION_SOURCE  K01914  KOfam
+                   K01953  KOfam
+///

@@ -1,0 +1,28 @@
+ENTRY       CYS_00
+NAME        Cysteine biosynthesis
+DEFINITION  ((K00640,K23304) ((K01738,K13034,K17069),(K12339,K22846))),((K01697,K10150) (K01758,K17217))
+ORTHOLOGY   K12339  S-sulfo-L-cysteine synthase (O-acetyl-L-serine-dependent) [EC:2.5.1.144]
+            K23304  serine O-acetyltransferase [EC:2.3.1.30]
+            K00640  serine O-acetyltransferase [EC:2.3.1.30]
+            K17069  O-acetylhomoserine/O-acetylserine sulfhydrylase [EC:2.5.1.49 2.5.1.47]
+            K01758  cystathionine gamma-lyase [EC:4.4.1.1]
+            K13034  L-3-cyanoalanine synthase/ cysteine synthase [EC:2.5.1.47 4.4.1.9]
+            K01697  cystathionine beta-synthase [EC:4.2.1.22]
+            K17217  cystathionine gamma-lyase / homocysteine desulfhydrase [EC:4.4.1.1 4.4.1.2]
+            K01738  cysteine synthase [EC:2.5.1.47]
+            K22846  S-sulfo-L-cysteine synthase (O-acetyl-L-serine-dependent) [EC:2.5.1.144]
+            K10150  cysteine synthase / O-phosphoserine sulfhydrylase / cystathionine beta-synthase [EC:2.5.1.47 2.5.1.65 4.2.1.22]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00270;map00260
+ANNOTATION_SOURCE  K12339  KOfam
+                   K23304  KOfam
+                   K00640  KOfam
+                   K17069  KOfam
+                   K01758  KOfam
+                   K13034  KOfam
+                   K01697  KOfam
+                   K17217  KOfam
+                   K01738  KOfam
+                   K22846  KOfam
+                   K10150  KOfam
+///

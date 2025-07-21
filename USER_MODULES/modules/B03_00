@@ -1,0 +1,38 @@
+ENTRY       B03_00
+NAME        Niacin/NAD (B3) biosynthesis
+DEFINITION  ((K00278,K06989) K03517),((K00453,K00463) (K01432,K14263,K07130) K00486 K01556 K00452) K00767 (K00969,K06210) (K01916,K01950)
+ORTHOLOGY   K00278  L-aspartate oxidase [EC:1.4.3.16]
+            K03517  quinolinate synthase [EC:2.5.1.72]
+            K07130  arylformamidase [EC:3.5.1.9]
+            K00767  nicotinate-nucleotide pyrophosphorylase (carboxylating) [EC:2.4.2.19]
+            K06210  nicotinamide mononucleotide adenylyltransferase [EC:2.7.7.1 2.7.7.18]
+            K14263  kynurenine formamidase [EC:3.5.1.9]
+            K00463  indoleamine 2,3-dioxygenase [EC:1.13.11.52]
+            K00453  tryptophan 2,3-dioxygenase [EC:1.13.11.11]
+            K01556  kynureninase [EC:3.7.1.3]
+            K06989  aspartate dehydrogenase [EC:1.4.1.21]
+            K00486  kynurenine 3-monooxygenase [EC:1.14.13.9]
+            K01950  NAD+ synthase (glutamine-hydrolysing) [EC:6.3.5.1]
+            K01432  arylformamidase [EC:3.5.1.9]
+            K00969  nicotinate-nucleotide adenylyltransferase [EC:2.7.7.18]
+            K01916  NAD+ synthase [EC:6.3.1.5]
+            K00452  3-hydroxyanthranilate 3,4-dioxygenase [EC:1.13.11.6]
+CLASS       User modules; Biosynthesis; Vitamin Biosynthesis
+PATHWAY     map00380;map00760
+ANNOTATION_SOURCE  K00278  KOfam
+                   K03517  KOfam
+                   K07130  KOfam
+                   K00767  KOfam
+                   K06210  KOfam
+                   K14263  KOfam
+                   K00463  KOfam
+                   K00453  KOfam
+                   K01556  KOfam
+                   K06989  KOfam
+                   K00486  KOfam
+                   K01950  KOfam
+                   K01432  KOfam
+                   K00969  KOfam
+                   K01916  KOfam
+                   K00452  KOfam
+///

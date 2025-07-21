@@ -1,0 +1,44 @@
+ENTRY       B07_00
+NAME        Biotin (B7) biosynthesis
+DEFINITION  ((K02169 (K00647,K09458) K00059 K02372 K00208 (K02170,K09789,K19560,K19561)),K16593 K01906) (K00652 (K00833,K19563 K01935,K19562,K25570 K01935) K01012)
+ORTHOLOGY   K19560  pimeloyl-[acyl-carrier protein] methyl ester esterase [EC:3.1.1.85]
+            K19562  bifunctional dethiobiotin synthetase / adenosylmethionine---8-amino-7-oxononanoate aminotransferase [EC:6.3.3.3 2.6.1.62]
+            K01935  dethiobiotin synthetase [EC:6.3.3.3]
+            K01012  biotin synthase [EC:2.8.1.6]
+            K09458  3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]
+            K01906  6-carboxyhexanoate--CoA ligase [EC:6.2.1.14]
+            K00208  enoyl-[acyl-carrier protein] reductase I [EC:1.3.1.9 1.3.1.10]
+            K09789  pimeloyl-[acyl-carrier protein] methyl ester esterase [EC:3.1.1.85]
+            K00833  adenosylmethionine---8-amino-7-oxononanoate aminotransferase [EC:2.6.1.62]
+            K19561  pimeloyl-[acyl-carrier protein] methyl ester esterase [EC:3.1.1.85]
+            K00647  3-oxoacyl-[acyl-carrier-protein] synthase I [EC:2.3.1.41]
+            K00652  8-amino-7-oxononanoate synthase [EC:2.3.1.47]
+            K02372  3-hydroxyacyl-[acyl-carrier-protein] dehydratase [EC:4.2.1.59]
+            K02170  pimeloyl-[acyl-carrier protein] methyl ester esterase [EC:3.1.1.85]
+            K02169  malonyl-CoA O-methyltransferase [EC:2.1.1.197]
+            K00059  3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+            K25570  8-amino-7-oxononanoate carboxylating dehydrogenase [EC:2.6.1.121]
+            K19563  lysine---8-amino-7-oxononanoate aminotransferase [EC:2.6.1.105]
+            K16593  pimeloyl-[acyl-carrier protein] synthase [EC:1.14.14.46]
+CLASS       User modules; Biosynthesis; Vitamin Biosynthesis
+PATHWAY     map00780
+ANNOTATION_SOURCE  K19560  KOfam
+                   K19562  KOfam
+                   K01935  KOfam
+                   K01012  KOfam
+                   K09458  KOfam
+                   K01906  KOfam
+                   K00208  KOfam
+                   K09789  KOfam
+                   K00833  KOfam
+                   K19561  KOfam
+                   K00647  KOfam
+                   K00652  KOfam
+                   K02372  KOfam
+                   K02170  KOfam
+                   K02169  KOfam
+                   K00059  KOfam
+                   K25570  KOfam
+                   K19563  KOfam
+                   K16593  KOfam
+///

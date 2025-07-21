@@ -1,0 +1,8 @@
+ENTRY       GLY_00
+NAME        Glycine biosynthesis
+DEFINITION  K00600
+ORTHOLOGY   K00600  glycine hydroxymethyltransferase [EC:2.1.2.1]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00260
+ANNOTATION_SOURCE  K00600  KOfam
+///

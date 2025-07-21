@@ -1,0 +1,137 @@
+Custom Module ID	Vitamin	Reactions	KOs	Genes	KEGG module	KEGG Pathway Map	Notes	Custom Module Full Definition
+B01_00	Thiamine (B1)	[ThiS]-COOH => [ThiS]-CO-AMP	K03148+K03154	thiF+thiS	M00127/M00895	map00730/map04122		"K03148+K03154 K03151 K03150,K03153 K03149 K10810 K03147 (((K00941,K00877) (K00788,K21220,K14154)),K14153,K21219) K00946"
+		[ThiS]-CO-AMP => [ThiS]-COSH	K03151	thiI	M00127/M00895	map00730		
+		tyrosine or glycine => iminoglycine	"K03150,K03153"	"thiH,thiO"	M00127/M00895	map00730	"K03150 comes from M00127, K03153 comes from M00895"	
+		"iminoglycine + [ThiS]-COSH + 1-Deoxy-D-xylulose 5-phosphate => 2-[(2R,5Z)-2-Carboxy-4-methylthiazol-5(2H)-ylidene]ethyl phosphate"	K03149	thiG	M00127/M00895	map00730		
+		"2-[(2R,5Z)-2-Carboxy-4-methylthiazol-5(2H)-ylidene]ethyl phosphate => 2-(2-Carboxy-4-methylthiazol-5-yl)ethyl phosphate"	K10810	tenI	M00895	map00730	this enzyme is not in M00127 definition but shows up on the pathway map	
+		AIR => HMP-P	K03147	thiC	M00127/M00895	map00730		
+		HMP-P => HMP-PP + 2-(2-Carboxy-4-methylthiazol-5-yl)ethyl phosphate => thiamine phosphate	"(((K00941,K00877) (K00788,K21220,K14154)),K14153,K21219)"	"(thiD,THI20) (thiE,thiN,THI6), thiDE, thiDN"	M00127/M00895	map00730	M00895 includes only the first option (K00941 and K00788)	"we also include K00877 (THI20) for the first step (EC 2.7.4.7,R04509) and K21220 (thiN),K14154 (THI6) for the second step (EC 2.5.1.3, R10712)"
+		thiamine phosphate => thiamine diphospate	K00946	thiL	M00127/M00895	map00730		
+								
+B02_00	Riboflavin (B2)	"GTP => 2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one"	"(K01497,K14652)"	"ribA, ribBA"	M00125	map00740	exactly the same as M00125	"(K01497,K14652) (K01498 K00082,K11752) (K22912,K20860,K20861,K20862,K21063,K21064) (K02858,K14652) K00794 K00793 (K20884 K22949,K11753)"
+		"2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one => 5-Amino-6-(5'-phosphoribosylamino)uracil => 5-Amino-6-(5'-phospho-D-ribitylamino)uracil"	"(K01498 K00082,K11752)"	"ribD1, ribD2, ribD"	M00125	map00740	"M00911 has an alternative branch for this step, but it seems to be a fungal pathway so we don't include it here"	
+		5-Amino-6-(5'-phospho-D-ribitylamino)uracil => 5-Amino-6-(1-D-ribitylamino)uracil	"(K22912,K20860,K20861,K20862,K21063,K21064)"	"PYRP2, FHY1, yigB, yigB, K21063, ycsE"	M00125	map00740		
+		"R5P => L-3,4-Dihydroxybutan-2-one 4-phosphate"	"(K02858,K14652)"	"ribB, ribBA"	M00125	map00740		
+		"5-Amino-6-(1-D-ribitylamino)uracil + L-3,4-Dihydroxybutan-2-one 4-phosphate => 6,7-Dimethyl-8-(D-ribityl)lumazine"	K00794	ribH	M00125	map00740		
+		"6,7-Dimethyl-8-(D-ribityl)lumazine => riboflavin"	K00793	ribE	M00125	map00740		
+		riboflavin => FMN/FAD	"(K20884 K22949,K11753)"	"FHY RIBF,ribF"	M00125	map00740		
+								
+B03_00	Niacin/NAD (B3)	(	(					
+		aspartate => iminoaspartate	"(K00278,K06989)"	"nadB, nadX"	M00115	map00760		"((K00278,K06989) K03517),((K00453,K00463) (K01432,K14263,K07130) K00486 K01556 K00452) K00767 (K00969,K06210) (K01916,K01950)"
+		iminoaspartate => quinolinate	K03517	nadA	M00115	map00760		
+		) OR (	) OR (					
+		tryptophan => N-Formyl-kynurenine	"(K00453,K00463)"	"TDO2, IDO"	M00912	map00380		
+		N-Formyl-kynurenine => L-kynurenine	"(K01432,K14263,K07130)"	"AFMID, BNA7, kynB"	M00912	map00380		
+		L-kynurenine => 3-Hydroxy-L-kynurenine	K00486	KMO	M00912	map00380		
+		3-Hydroxy-L-kynurenine => 3-Hydroxy-anthranilate	K01556	KYNU	M00912	map00380		
+		3-Hydroxy-anthranilate => 2-amino-3-carboxymuconate semialdehyde (=> quinolinate)	K00452	HAAO	M00912	map00380		
+		) AND	) AND					
+		quinolinate => nicotinate D-ribonucleotide	K00767	nadC	M00115/M00912	map00760		
+		nicotinate D-ribonucleotide => Deamino-NAD+	"(K00969,K06210)"	"nadD, NMNAT"	M00115/M00912	map00760		
+		Deamino-NAD+ => NAD+	"(K01916,K01950)"	"nadE, E6.3.5.1"	M00115/M00912	map00760		
+								
+B05_00	Pantothenic Acid (B5)	valine => 3-methyl-2-oxobutanoate	K00826	ilvE	M00119	map00770		"K00826 K00606 (K01579,(K13367 K00128)) (K01918,K13799)"
+		3-methyl-2-oxobutanoate => 2-dehydropantoate	K00606	panB	M00119/M00913	map00770		
+		2-dehydropantoate => (R)-Pantoate	"(K00077,K24263)"	"panE,panG"	M00119/M00913	map00770	we added K24263 (panG) from the pathway map here	
+		AND (	AND (					
+		aspartate => beta-alanine	"(K01579,K24264,K18933,K18966)"	"panD,panP,mfnA/adc,GADL1/CSAD"	M00119	map00770	"we added K24264 (panP), K18933 (mfnA,adc) and K18966 (GADL1,CSAD) from the pathway map here"	
+		OR	OR					
+		spermine => 3-aminopropanal	K13367	FMS1	M00913	map00770		
+		3-aminopropanal => beta-alanine	K00128	ALDH	M00913	map00770		
+		) AND	) AND					
+		beta-alanine + (R)-Pantoate => (R)-Pantothenate	"(K01918,K13799)"	"panC, panC-cmk"	M00119/M00913	map00770	M00913 only includes K01918 as an option here	
+								
+B06_00	Pyroxidine (B6)	R5P + glyceraldehyde-3P + glutamine => pyridoxal-P	K06215+K08681	pdxS + pdxT	M00916	map00750		"K06215+K08681,(K03472 K03473 K00831 K00097 K03474 K00275)"
+		OR (	OR (					
+		Erythrose-4P => 3-Phospho-D-erythronate	K03472	epd	M00124	map00750		
+		3-Phospho-D-erythronate => 2-oxo-3-hydroxy-4-phosphobutanoate	K03473	pdxB	M00124	map00750		
+		2-oxo-3-hydroxy-4-phosphobutanoate => O-phospho-4-hydroxy-L-threonine	K00831	serC	M00124	map00750		
+		 O-phospho-4-hydroxy-L-threonine => 2-amino-3-oxo-4-phosphonobutanoate (=> 3-amino-2-oxopropyl-phosphate)	K00097	pdxA	M00124	map00750		
+		3-amino-2-oxopropyl-phosphate => pyridoxine 5'-phosphate	K03474	pdxJ	M00124	map00750		
+		pyridoxine 5'-phosphate => pyridoxal-P	"(K00275,K23998)"	"pdxH,PPOX"	M00124	map00750	we included K23998 (PPOX) from the pathway map here	
+		)	)					
+								
+B07_00	Biotin (B7)	((	((				start pimeloyl-production block	"((K02169 (K00647,K09458) K00059 K02372 K00208 (K02170,K09789,K19560,K19561)),K16593,K01906) (K00652 (K00833,K19563 K01935,K19562),(K25570 K01935) K01012)"
+		malonyl-[acp] => malonyl-[acp] methyl ester 	K02169	bioC	M00572	map00780		
+		malonyl-[acp] methyl ester  => 3-ketoglutaryl-[acp] methyl ester OR malonyl-[acp] + glutaryl-[acp] methyl ester => 3-ketopimeloyl-[acp] methyl ester	"(K00647,K09458)"	"fabB,fabF"	M00572	map00780	the same set of fab enzymes is used to convert malonyl-[acp] methyl ester => glutaryl-[acp] methyl ester and glutaryl-[acp] methyl ester => pimeloyl-[acp] methyl ester	
+		3-ketopimeloyl-[acp] methyl ester => 3-hydroxy-pimeloyl-[acp] methyl ester	K00059	fabG	M00572	map00780		
+		3-hydroxy-pimeloyl-[acp] methyl ester => enoyl-pimeloyl-[acp] methyl ester	K02372	fabZ	M00572	map00780		
+		enoyl-pimeloyl-[acp] methyl ester => pimeloyl-[acp] methyl ester	K00208	fabI	M00572	map00780		
+		pimeloyl-[acp] methyl ester => pimeloyl-[acp]	"(K02170,K09789,K19560,K19561)"	"bioH,bioG,bioJ,bioK"	M00572	map00780		
+		) OR	) OR					
+		long-chain-acyl-[acp] => pimeloyl-[acp]	K16593	bioI	M00573	map00780		
+		OR						
+		pimelate => pimeloyl-CoA	K01906	bioW	M00577	map00780		
+		) AND (	) AND (				start ring assembly block	
+		pimeloyl-[acp] or pimeloyl-CoA => 8-amino-7-oxononanoate	K00652	bioF	M00123/M00950	map00780		
+		AND (	AND (					
+		"8-amino-7-oxononanoate => 7,8-Diamino-nonanoate"	"K00833,K19563"	"(bioA,bioA) "	M00123	map00780		
+		"7,8-Diamino-nonanoate => Dethiobiotin"	"K01935,K19562"	"bioD, BIO3-BIO1"	M00123	map00780		
+		OR	OR					
+		8-amino-7-oxononanoate => 8-amino-7-(carboxyamino)nonanoate	K25570	bioU	M00950	map00780		
+		8-amino-7-(carboxyamino)nonanoate => Dethiobiotin	K01935	bioD	M00950	map00780		
+		) AND	) AND					
+		Dethiobiotin => biotin	K01012	bioB	M00123/M00950	map00780		
+		)	)					
+								
+B09_00	Folic Acid (B9)	(	(					
+		"GTP => 2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one"	"(K14652,K01497)"	"ribB,ribA/RIB1"	M00840	map00790	"we also included K01497 (ribA,RIB1) from the pathway map here (EC 3.5.4.25)"	"((K14652,K01497) K22100 -- (K01633,K13939,K13940,K09739)),((K01495,K09007,K22391) (K22101,(K01077,K01113),(K08310,K19965) (K13939,K13940,K01633,K09739)))) (((K00950,K13941,K13939,K13940,K07142) (K13941,K00796,K13939,K24102,K18974,K18824,K18825)),(K13941,K00796,K13939,K24102,K18974,K18824,K18825)) (K22099,K11754,K20457) (K00287, K13998)"
+		"2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one => 7,8-Dihydro-neopterin 3'-P"	K22100	trpF	M00840	map00790		
+		"7,8-Dihydro-neopterin 3'-P => 7,8-Dihydro-neopterin"	--	R04621	M00840	map00790		
+		"7,8-Dihydro-neopterin => 6-(Hydroxymethyl)-7,8-dihydropterin"	"(K01633,K13939,K13940,K09739)"	"folB,FOL1,sulD,mptD"	M00840/M00126	map00790	"we also include K13939 (FOL1), K13940 (sulD) and K09739 (mptD) from the pathway map here (EC 4.1.2.25, R03504)"	
+		) OR (	) OR (				outer OR	
+		"GTP => => => 7,8-Dihydroneopterin 3'-P3 (multiple reactions)"	"(K01495,K09007,K22391)"	"GCH1, folE, folE2, E3.5.4.16"	M00126/M00841	map00790		
+		AND (	AND (					
+		" 7,8-Dihydroneopterin 3'-P3  => 6-(Hydroxymethyl)-7,8-dihydropterin"	K22101	PTPS	M00841	map00790		
+		OR (	OR (				inner OR	
+		"7,8-Dihydroneopterin 3'-P3 => 7,8-Dihydroneopterin"	"(K01077,K01113)"	"phoA phoB, phoD"	M00126	map00790		
+		OR	OR					
+		"7,8-Dihydroneopterin 3'-P3 => 7,8-Dihydroneopterin 3'-P (=> 7,8-Dihydro-neopterin)"	"(K08310,K19965)"	"nudB, folQ"	M00126	map00790	non-enzymatic reaction R04621 happens spontaneously after this step	
+		AND	AND					
+		"7,8-Dihydro-neopterin => 6-(Hydroxymethyl)-7,8-dihydropterin"	"(K13939,K13940,K01633,K09739)"	"FOL1, sulD, folB, mptD"	M00126/M00840	map00790	"we also include K09739 (mptD) from the pathway map here (EC 4.1.2.25, R03504)"	
+		))) AND ((	))) AND ((					
+		"6-(Hydroxymethyl)-7,8-dihydropterin => 6-Hydroxymethyl-7,8-dihydropterin diphosphate"	"(K00950,K13941,K13939,K13940,K07142)"	"folK, folKP, FOL1, sulD, mptE"	M00126	map00790	"we also include K13939 (FOL1), K13940 (sulD), K07142 (mptE) from the pathway map here (EC 2.7.6.3, R03503)"	
+		"6-Hydroxymethyl-7,8-dihydropterin diphosphate => 7,8-Dihydro-pteroate"	"(K13941,K00796,K13939,K24102,K18974,K18824,K18825)"	"folKP,folP,FOL1,folCP,sul1,sul2,sul3"	M00126/M00840/M00841	map00790	"We also include K13939 (FOL1), K24102 (folCP), K18974 (sul1), K18824 (sul2), K18825 (sul3) from the pathway map here (EC 2.5.1.15, R03067/R03066)"	
+		) OR (	) OR (					
+		"6-(Hydroxymethyl)-7,8-dihydropterin => 7,8-Dihydro-pteroate"	"(K13941,K00796,K13939,K24102,K18974,K18824,K18825)"	"folKP,folP"	M00126/M00840/M00841	map00790	"We also include K13939 (FOL1), K24102 (folCP), K18974 (sul1), K18824 (sul2), K18825 (sul3) from the pathway map here (EC 2.5.1.15, R03067/R03066)"	
+		)) AND	)) AND					
+		"7,8-Dihydro-pteroate => DHF"	"(K22099,K11754,K20457)"	folC2	M00126/M00840/M00841	map00790		
+		DHF => THF => folate	"(K00287,K13998)"	"folA, DHFR-TS"	M00126/M00840/M00841	map00790		
+								
+B12_00	Cobalamin (B12) - aerobic	uroporphyrinogen III => precorrin 2	"(K02303,K13542,K02302,K00589,K02496,K13543)"	"cobA,cobA-hemD,cysG,MET1,hemX,hemDX"	M00925	map00860	"we also include K02302 (cysG), K00589 (MET1), K02496 (hemX), K13543 (hemDX) from the pathway map here (EC 2.1.1.107, R03194)"	"(K02303,K13542,K02302,K00589,K02496,K13543) (K03394,K13540) K02229 (K05934,K13540,K13541) K05936 K02228 K05895 K00595 K06042 K02224 K02230+K09882+K09883 (K00798,K19221) K02232 (K02225,K02227) K02231 K00768 (K02226,K22316) K02233"
+		precorrin 2 => precorrin 3A	"(K03394,K13540)"	"cobI-cbiL, cobIJ"	M00925	map00860		
+		precorrin 3A => precorrin 3B	K02229	cobG	M00925	map00860		
+		precorrin 3B => precorrin 4	"(K05934,K13540,K13541)"	"cobJ, cobIJ, cbiGH-cobJ"	M00925	map00860		
+		precorrin 4 => precorrin 5	K05936	cobM	M00925	map00860		
+		precorrin 5 => precorrin 6A	K02228	cobF	M00925	map00860		
+		precorrin 6A => precorrin 6B	K05895	cobK-cbiJ	M00925	map00860		
+		precorrin 6B => precorrin 8X	K00595	cobL-cbiET	M00925	map00860		
+		precorrin 8X => hydrogenobyrinate	K06042	cobH-cbiC	M00925	map00860		
+		"hydrogenobyrinate => hydrogenobyrinate a,c diamide"	K02224	cobB-cbiA	M00925	map00860		
+		"hydrogenobyrinate a,c diamide => cob(II)yrinate a,c diamide"	K02230+K09882+K09883	cobN+cobS+cobT	M00925	map00860		
+		"cob(II)yrinate a,c diamide => adenosyl cobyrinate a,c diamide"	"(K00798,K19221)"	"MMAB, cobA"	M00122	map00860		
+		"adenosyl cobyrinate a,c diamide => adenosyl cobyrinate hexaamide"	K02232	cobQ	M00122	map00860		
+		adenosyl cobyrinate hexaamide => adenosyl cobinamide	"(K02225,K02227)"	"cobC1, cbiB"	M00122	map00860		
+		adenosyl cobinamide => adenosyl cobinamide phosphate => adenosine-GDP-cobinamide	K02231	cobP	M00122	map00860	"pathway map also includes K19712 (cobY) for the second reaction here, but we don't include it because the reaction is already fulfilled by K02231 (which you need for the previous step anyway)"	
+		dimethyl-benzimidazole => alpha-Ribazole-5'P	K00768	"cobU, cobT"	M00122	map00860		
+		alpha-Ribazole-5'P => alpha-Ribazole	"(K02226,K22316)"	"cobC, rhnA-cobC"	M00122	map00860		
+		adenosine-GDP-cobinamide + alpha-Ribazole => Vitamin B12	K02233	"cobS, cobV"	M00122	map00860		
+								
+B12_01	Cobalamin (B12) - anaerobic	uroporphyrinogen III => precorrin 2 => sirohydrochlorin	"(K02302,(K02303,K13542,K00589,K02496,K13543) (K02304,K24866))"	"cysG,(cobA,cobA-hemD MET8,sirC)"	M00924	map00860	"we also include K00589 (MET1), K02496 (hemX), K13543 (hemDX) here for uroporphyrinogen III => precorrin 2 (EC 2.1.1.107, R03194)"	"(K02302,(K02303,K13542,K00589,K02496,K13543) (K02304,K24866)) (K02190,K03795,K22011) (K03394,K13540) (K05934,K13541,K21479) K05936 (K02189,K13541) K02188 K05895 (K02191 K03399,K00595) K06042 K02224 (K00798,K19221) K02232 (K02225,K02227) K02231 K00768 (K02226,K22316) K02233"
+		sirohydrochlorin => co-sirohydrochlorin	"(K02190,K03795,K22011)"	"cbiK, cbiX, cfbA"	M00924	map00860		
+		co-sirohydrochlorin => Co-factor 3	"(K03394,K13540)"	"cobI-cbiL,cobIJ"	M00924	map00860	"we also include K13540 (cobIJ) here (EC 2.1.1.151, R05808)"	
+		Co-factor 3 => Co-precorrin 4	"(K05934,K13541,K21479)"	"cobJ, cbiGH-cobJ, cbiH60 "	M00924	map00860		
+		Co-precorrin 4 => Co-precorrin 5A	K05936	cobM	M00924	map00860		
+		Co-precorrin 5A => Co-precorrin 5B	"(K02189,K13541)"	"cbiG, cbiGH-cobJ"	M00924	map00860		
+		Co-precorrin 5B => Co-precorrin 6A	K02188	cbiD	M00924	map00860		
+		Co-precorrin 6A => Co-precorrin 6B	K05895	cobK-cbiJ	M00924	map00860		
+		Co-precorrin 6B => Co-precorrin 7 => Co-precorrin 8	"(K02191 K03399,K00595)"	"cbiT cbiE,cobL-cbiET"	M00924	map00860		
+		Co-precorrin 8 => cobyrinate	K06042	cobH-cbiC	M00924	map00860		
+		"cobyrinate => cob(II)yrinate a,c diamide"	K02224	cobB-cbiA	M00924	map00860		
+		"cob(II)yrinate a,c diamide => adenosyl cobyrinate a,c diamide"	"(K00798,K19221)"	"MMAB, cobA"	M00122	map00860		
+		"adenosyl cobyrinate a,c diamide => adenosyl cobyrinate hexaamide"	K02232	cobQ	M00122	map00860		
+		adenosyl cobyrinate hexaamide => adenosyl cobinamide	"(K02225,K02227)"	"cobC1, cbiB"	M00122	map00860		
+		adenosyl cobinamide => adenosyl cobinamide phosphate => adenosine-GDP-cobinamide	K02231	cobP	M00122	map00860	"pathway map also includes K19712 (cobY) for the second reaction here, but we don't include it because the reaction is already fulfilled by K02231 (which you need for the previous step anyway)"	
+		dimethyl-benzimidazole => alpha-Ribazole-5'P	K00768	"cobU, cobT"	M00122	map00860		
+		alpha-Ribazole-5'P => alpha-Ribazole	"(K02226,K22316)"	"cobC, rhnA-cobC"	M00122	map00860		
+		adenosine-GDP-cobinamide + alpha-Ribazole => Vitamin B12	K02233	"cobS, cobV"	M00122	map00860		

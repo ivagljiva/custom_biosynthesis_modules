@@ -1,0 +1,40 @@
+ENTRY       ARG_00
+NAME        Arginine biosynthesis
+DEFINITION  (K22478 K00145 K00821 (K09065 K01438),((K01438,K14677,K00620) K00611) K01940 (K01755,K14681)),(K05826 K19412 K05828 K05829 K05830 K05831 K00611 K01940 (K01755,K14681))
+ORTHOLOGY   K00620  glutamate N-acetyltransferase / amino-acid N-acetyltransferase [EC:2.3.1.35 2.3.1.1]
+            K00145  N-acetyl-gamma-glutamyl-phosphate reductase [EC:1.2.1.38]
+            K09065  N-acetylornithine carbamoyltransferase [EC:2.1.3.9]
+            K19412  glutamate---[amino group carrier protein] ligase [EC:6.3.2.60]
+            K05826  alpha-aminoadipate/glutamate carrier protein LysW
+            K05829  [amino group carrier protein]-6-phospho-L-2-aminoadipate/5-phospho-L-glutamate reductase [EC:1.2.1.103 1.2.1.106]
+            K05828  [amino group carrier protein]-L-2-aminoadipate/L-glutamate 6-kinase [EC:2.7.2.17 2.7.2.19]
+            K14677  aminoacylase [EC:3.5.1.14]
+            K01438  acetylornithine deacetylase [EC:3.5.1.16]
+            K00611  ornithine carbamoyltransferase [EC:2.1.3.3]
+            K05830  [amino-group carrier protein]-gamma-(L-lysyl/L-ornithyl)-L-glutamate aminotransferase [EC:2.6.1.118 2.6.1.124]
+            K01940  argininosuccinate synthase [EC:6.3.4.5]
+            K22478  bifunctional N-acetylglutamate synthase/kinase [EC:2.3.1.1 2.7.2.8]
+            K14681  argininosuccinate lyase / amino-acid N-acetyltransferase [EC:4.3.2.1 2.3.1.1]
+            K00821  acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17]
+            K01755  argininosuccinate lyase [EC:4.3.2.1]
+            K05831  [amino group carrier protein]-lysine/ornithine hydrolase [EC:3.5.1.130 3.5.1.132]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00220
+ANNOTATION_SOURCE  K00620  KOfam
+                   K00145  KOfam
+                   K09065  KOfam
+                   K19412  KOfam
+                   K05826  KOfam
+                   K05829  KOfam
+                   K05828  KOfam
+                   K14677  KOfam
+                   K01438  KOfam
+                   K00611  KOfam
+                   K05830  KOfam
+                   K01940  KOfam
+                   K22478  KOfam
+                   K14681  KOfam
+                   K00821  KOfam
+                   K01755  KOfam
+                   K05831  KOfam
+///

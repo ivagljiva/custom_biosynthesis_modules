@@ -1,0 +1,18 @@
+ENTRY       VAL_00
+NAME        Valine biosynthesis
+DEFINITION  K01652+(K01653,K11258) K00053 K01687 K00826
+ORTHOLOGY   K01653  acetolactate synthase I/III small subunit [EC:2.2.1.6]
+            K11258  acetolactate synthase II small subunit [EC:2.2.1.6]
+            K00826  branched-chain amino acid aminotransferase [EC:2.6.1.42]
+            K01687  dihydroxy-acid dehydratase [EC:4.2.1.9]
+            K01652  acetolactate synthase I/II/III large subunit [EC:2.2.1.6]
+            K00053  ketol-acid reductoisomerase [EC:1.1.1.86]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00290
+ANNOTATION_SOURCE  K01653  KOfam
+                   K11258  KOfam
+                   K00826  KOfam
+                   K01687  KOfam
+                   K01652  KOfam
+                   K00053  KOfam
+///

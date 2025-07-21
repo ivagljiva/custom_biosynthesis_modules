@@ -1,0 +1,167 @@
+Custom Module ID	Amino Acid	Reactions	KOs	Genes	KEGG module	KEGG Pathway Map	Notes	Custom Module Full Definition							
+ALA_00	Alanine	Pyruvate => alanine 	K14260	alaA		map00250		K14260							
+															
+ASP_00	Aspartate	Pyruvate => oxaloacetate	"(K01958,K01959+K01960)"	"pyc, pycA+pycB"		map00620		"(K01958,K01959+K01960) (K00812,K00813,K11358)"							
+		oxaloacetate => aspartate	"(K00812,K00813,K11358)"	"aspB,aspC,yhdR"		map00250									
+															
+ASN_00	Asparagine	aspartate => asparagine	"(K01914,K01953)"	"asnA,asnB"		map00250		"(K01914,K01953)"							
+															
+VAL_00	Valine	Pyruvate => (S)-2-Acetolactate	"K01652+(K01653,K11258)"	"ilvB/ilvG/ilvI+(ilvH/ilvN,ilvM)"	M00019	map00290	exactly the same as M00019	"K01652+(K01653,K11258) K00053 K01687 K00826"							
+		" (S)-2-Acetolactate => 3-Hydroxy-3-methyl-2-oxobutanoate => (r)-2,3-dihydroxy-3-methylbutanoate"	K00053	ilvC	M00019	map00290									
+		"(r)-2,3-dihydroxy-3-methylbutanoate => 2-Oxoisovalerate"	K01687	ilvD	M00019	map00290									
+		2-Oxoisovalerate => valine	K00826	ilvE	M00019	map00290									
+															
+LEU_00	Leucine	Pyruvate => (S)-2-Acetolactate	"K01652+(K01653,K11258)"	"ilvB/ilvG/ilvI+(ilvH/ilvN,ilvM)"	M00019	map00290	split reactions of M00019	"K01652+(K01653,K11258) K00053 K01687 K01649 (K01702,K01703+K01704) K00052 K00826"							
+		" (S)-2-Acetolactate => 3-Hydroxy-3-methyl-2-oxobutanoate => (r)-2,3-dihydroxy-3-methylbutanoate"	K00053	ilvC	M00019	map00290	with M00432 in middle								
+		"(r)-2,3-dihydroxy-3-methylbutanoate => 2-Oxoisovalerate"	K01687	ilvD	M00019	map00290									
+		2-Oxoisovalerate => (2S)-2-Isopropylmalate	K01649	leuA	M00432	map00290									
+		"(2S)-2-Isopropylmalate => 2-Isopropylmaleate => (2R,3S)-3-Isopropylmalate"	"(K01702,K01703+K01704)"	leuC+leuD	M00432	map00290									
+		"(2R,3S)-3-Isopropylmalate => (2S)-2-Isopropyl-3-oxosuccinate (=> spontaneous rxn to 4-Methyl-2-oxopentanoate)"	K00052	leuB	M00432	map00290									
+		4-Methyl-2-oxopentanoate => Leucine	K00826	ilvE	M00019	map00290									
+															
+MET_00	Methionine	aspartate => L-4-Aspartyl-phosphate	"(K00928,K12524,K12525)"	"lysC, thrA, metL"	M00017	map00270	exactly the same as M00017	"(K00928,K12524,K12525) K00133 (K00003,K12524,K12525) (K00651,K00641) K01739 (K01760,K14155) (K00548,K24042,K00549)"							
+		L-4-Aspartyl-phosphate => L-Aspartate-4-semialdehyde	K00133	asd	M00017	map00270									
+		L-Aspartate-4-semialdehyde => L-Homoserine	"(K00003,K12524,K12525)"	"hom, thrA, metL"	M00017	map00270									
+		L-Homoserine => O-Succinyl-L-homoserine	"(K00651,K00641)"	"metA, metX"	M00017	map00270									
+		O-Succinyl-L-homoserine => L-Cystathionine	K01739	metB	M00017	map00270									
+		L-Cystathionine => L-Homocysteine	"(K01760,K14155)"	"metC, patB"	M00017	map00270									
+		L-Homocysteine => Methionine	"(K00548,K24042,K00549)"	"metH, jitJ, metE"	M00017	map00270									
+															
+THR_00	Threonine	aspartate => L-4-Aspartyl-phosphate	"(K00928,K12524,K12525,K12526)"	"lysC, thrA, metL, lyaAC"	M00018	map00260	exactly the same as M00018	"(K00928,K12524,K12525,K12526) K00133 (K00003,K12524,K12525) (K00872,K02204,K02203) K01733"							
+		L-4-Aspartyl-phosphate => L-Aspartate-4-semialdehyde	K00133	asd	M00018	map00260									
+		L-Aspartate-4-semialdehyde => L-Homoserine	"(K00003,K12524,K12525)"	"hom, thrA, metL"	M00018	map00260									
+		L-Homoserine => O-Phospho-L-homoserine	"(K00872,K02204,K02203)"	"thrB, thrB2, thrH"	M00018	map00260									
+		O-Phospho-L-homoserine => Threonine	K01733	thrC	M00018	map00260									
+															
+ILE_00	Isoleucine	(	(												
+		threonine => 2-oxobutanoate	"(K17989,K01754)"	ilvA tdcB	M00570	map00290	first step of M00570	"((K17989,K01754),(K09011 K01703+K01704 K00052))  K01652+(K01653,K11258) K00053 K01687 K00826"							
+		OR	OR												
+		Pyruvate => (R)-2-Methylmalate	K09011	cimA	M00535	map00290									
+		(R)-2-Methylmalate => 2-Methyl-maleate => D-erythro-3-Methylmalate	K01703+K01704	"leuC, leuD"	M00535	map00290									
+		D-erythro-3-Methylmalate => 2-oxobutanoate	K00052	leuB	M00535	map00290									
+		) AND	) AND												
+		2-oxobutanoate => (S)-2-Aceto-2-hydroxybutanoate	"K01652+(K01653,K11258)"	"ilvB, ilvG, ilvI + (ilvH ilvN, ilvM)"	M00570	map00290	"from this point, remainder of M00570"								
+		"(S)-2-Aceto-2-hydroxybutanoate => (R)-3-Hydroxy-3-methyl-2-oxopentanoate => (R)-2,3-Dihydroxy-3-methylpentanoate"	K00053	ilvC	M00570	map00290									
+		"(R)-2,3-Dihydroxy-3-methylpentanoate => (S)-3-Methyl-2-oxopentanoate"	K01687	ilvD	M00570	map00290									
+		(S)-3-Methyl-2-oxopentanoate => Isoleucine	K00826	ilvE	M00570	map00290									
+															
+LYS_00	Lysine	aspartate => L-4-Aspartyl-phosphate	"(K00928,K12524,K12525,K12526)"	"lysC, thrA, metL, lyaAC"	M00016/M00525/M00526/M00527	map00300		"(K00928,K12524,K12525,K12526) K00133 K01714 K00215 (K03340,((K10206,(K05822 K00841 K05823),(K00674 (K00821,K14267) K01439)) K01778)) (K01586,K12526)"							
+		L-4-Aspartyl-phosphate => L-Aspartate-4-semialdehyde	K00133	asd	M00016/M00525/M00526/M00527	map00300									
+		"L-Aspartate-4-semialdehyde => (2S,4S)-4-Hydroxy-2,3,4,5-tetrahydro-dipicolinate"	K01714	dapA	M00016/M00525/M00526/M00527	map00300									
+		"(2S,4S)-4-Hydroxy-2,3,4,5-tetrahydro-dipicolinate => L-2,3,4,5-tetrahydro-dipicolinate"	K00215	dabB	M00016/M00525/M00526/M00527	map00300									
+		AND (	AND (												
+		"L-2,3,4,5-tetrahydro-dipicolinate => L-2-Amino-6-oxopimelate => meso-2,6-diaminopimelate"	K03340	dapdh	M00526	map00300									
+		OR (	OR (				START outer OR								
+		"L-2,3,4,5-tetrahydro-dipicolinate => LL-2,6-Diaminopimelate"	K10206	E2.6.1.83	M00527	map00300									
+		OR (	OR (				inner OR								
+		"L-2,3,4,5-tetrahydro-dipicolinate => N-Acetyl-L-2-amino-6-oxopimelate"	K05822	dapH	M00525	map00300									
+		"N-Acetyl-L-2-amino-6-oxopimelate => N-Acetyl-LL-2,6-diaminopimelate"	K00841	patA	M00525	map00300									
+		"N-Acetyl-LL-2,6-diaminopimelate => LL-2,6-Diaminopimelate"	K05823	dapL	M00525	map00300									
+		) OR (	) OR (				inner OR								
+		"L-2,3,4,5-tetrahydro-dipicolinate => N-Succinyl-L-2-amino-6-oxopimelate"	K00674	dabD	M00016	map00300									
+		"N-Succinyl-L-2-amino-6-oxopimelate => N-Succinyl-LL-2,6-diaminopimelate"	"(K00821,K14267)"	"argD, dapC"	M00016	map00300									
+		"N-Succinyl-LL-2,6-diaminopimelate => LL-2,6-Diaminopimelate"	K01439	dapE	M00016	map00300									
+		) AND	) AND				inner AND								
+		"LL-2,6-Diaminopimelate => meso-2,6-diaminopimelate"	K01778	dapF	M00016/M00525/M00527	map00300									
+		)) AND	)) AND				END outer OR								
+		"meso-2,6-diaminopimelate => Lysine"	"(K01586,K12526)"	"lysA, lysAC"	M00016/M00525/M00526/M00527	map00300									
+															
+SER_00	Serine	3P-D-glycerate => 3P-Hydroxy-pyruvate	K00058	serA	M00020	map00260	exactly the same as M00020	"K00058 K00831 (K01079,K02203,K22305,K25528)"							
+		3P-Hydroxy-pyruvate => phosphoserine	K00831	serC	M00020	map00260									
+		phosphoserine => serine	"(K01079,K02203,K22305,K25528)"	"serB, thrH, psp, ysaA"	M00020	map00260									
+															
+CYS_00	Cysteine	(	(					"(K00640,K23304) ((K01738,K13034,K17069),(K12339,K22846))),((K01697,K10150) (K01758,K17217))"							
+		serine => O-Acetyl-L-serine	"(K00640,K23304)"	"cysE, cysE"	M00021	map00270									
+		AND (	AND (												
+		O-Acetyl-L-serine => cysteine	"(K01738,K13034,K17069)"	"cysK, "	M00021	map00270									
+		OR	OR												
+		O-Acetyl-L-serine => S-sulfo-L-cysteine => cysteine	"(K12339,K22846)"	cysM		map00270	"not in M00021 definition, but catalyzes O-Acetyl-L-serine => S-sulfo-L-cysteine (and spontaneous rxn follows)"								
+		)) OR (	)) OR (												
+		serine => cystathionine	"(K01697,K10150)"	cysO	M00338ÊÊ	map00260									
+		cystathionine => cysteine	"(K01758,K17217)"	mccB	M00338ÊÊ	map00260									
+		)	)												
+															
+GLY_00	Glycine	serine => glycine	K00600	glyA		map00260		K00600							
+															
+GLU_00	Glutamate	2-oxoglutarate => glutamate	"(K00265+K00266),K00260,K00261,K00262"	"gltB+gltD, gudB/rocG, gdhA (uses NAD(P)+), gdhA (uses NADP+)"		map00250		"(K00265+K00266),K00260,K00261,K00262"							
+															
+GLN_00	Glutamine	glutamate => glutamine	K01915	glnA		map00250		K01915							
+															
+ARG_00	Arginine	(	(				this section is glutamate => citruline	"(K22478 K00145 K00821 ((K09065 K01438),((K01438,K14677,K00620) K00611)) K01940 (K01755,K14681)),(K05826 K19412 K05828 K05829 K05830 K05831 K00611 K01940 (K01755,K14681))"							
+		glutamate => N-Acetyl-glutamate => N-Acetyl-glutamate-P	K22478	K22478	M00845	map00220									
+		N-Acetyl-glutamate-P => N-Acetylglutamate semialdehyde	K00145	argC	M00845	map00220									
+		N-Acetylglutamate semialdehyde => N-Acetyl-ornithine	K00821	argD	M00845	map00220									
+		AND (	AND (												
+		N-Acetyl-ornithine => N-Acetyl-L-citrulline	K09065	argF	M00845	map00220									
+		N-Acetyl-L-citrulline => Citruline	K01438	argE	M00845	map00220									
+		) OR (	) OR (												
+		N-Acetyl-ornithine => ornithine	"(K01438,K14677,K00620)"	"argE,ACY1,argJ"	M00028	map00220									
+		ornithine => Citruline	K00611	"OTC, argF, argI"	M00844	map00220	these steps are repeated below since there is an alternative way to obtain ornithine from glutamate								
+		) AND	) AND				now citruline => arginine								
+		Citruline => L-Arginosuccinate	K01940	argG	M00844/M00845	map00220	this reaction also needs aspartate as input								
+		L-Arginosuccinate => arginine	"(K01755,K14681)"	"argH, argHA"	M00844/M00845	map00220									
+		) OR (	) OR (				this section is glutamate => ornithine via M00763								
+		LysW carrier protein	K05826	"lysW, argW"	M00763	map00220									
+		glutamate => LysW-glutamate	K19412	argX	M00763	map00220									
+		LysW-glutamate => LysW-glutamyl-P	K05828	lysZ	M00763	map00220									
+		LysW-glutamyl-P => LysW-L-glutamate semialdehyde	K05829	lysY	M00763	map00220									
+		LysW-L-glutamate semialdehyde => LysW-ornithine	K05830	lysJ	M00763	map00220									
+		LysW-ornithine => ornithine	K05831	lysK	M00763	map00220									
+		ornithine => Citruline	K00611	"OTC, argF, argI"	M00844	map00220	here we repeat ornithine => citruline => arginine								
+		Citruline => L-Arginosuccinate	K01940	argG	M00844/M00845	map00220	this reaction also needs aspartate as input								
+		L-Arginosuccinate => arginine	"(K01755,K14681)"	"argH, argHA"	M00844/M00845	map00220									
+		)	)												
+															
+PRO_00	Proline	(	(					"((K00931,K12657) (K00147,K12657) K00286),(((K00618,K00619,K14681,K14682,K00620,K22477,K22478) ((K00930,K22478) K00145,K12659) (K00818,K00821) (K01438,K14677,K00620)),(K05826 K19412 K05828 K05829 K05830 K05831) (K01750,K27542,K28013))"							
+		glutamate => L-glutamyl-P	"(K00931,K12657)"	"(proB, ALDH18A1)"	M00015	map00330									
+		L-glutamyl-P => L-glutamate 5-semialdehyde (=> 1-Pyrroline-5-carboxylate)	"(K00147,K12657)"	"proA, ALDH18A1"	M00015	map00330									
+		1-Pyrroline-5-carboxylate => proline	K00286	proC	M00015	map00330									
+		) OR ((	) OR ((				outer OR								
+		glutamate => N-Acetyl-glutamate	"(K00618,K00619,K14681,K14682,K00620,K22477,K22478)"	"(ARG2, argA, argGH, argAG, argJ, argO, K22478"	M00028	map00220									
+		N-Acetyl-glutamate => N-Acetyl-glutamate-P => N-Acetylglutamate semialdehyde	"((K00930,K22478) K00145,K12659)"	"(argB, K22478) argC, ARG56"	M00028	map00220									
+		N-Acetylglutamate semialdehyde => N-Acetyl-ornithine	"(K00818,K00821)"	"argD, argD"	M00028	map00220									
+		N-Acetyl-ornithine => ornithine	"(K01438,K14677,K00620)"	"argE, ACY1, argJ"	M00028	map00220									
+		) OR (	) OR (				inner OR								
+		carrier protein LysW	K05826	"lysW, argW"	M00763	map00220									
+		glutamate => LysW-glutamate	K19412	argX	M00763	map00220									
+		LysW-glutamate => LysW-glutamyl-P	K05828	lysZ	M00763	map00220									
+		LysW-glutamyl-P => LysW-L-glutamate semialdehyde	K05829	lysY	M00763	map00220									
+		LysW-L-glutamate semialdehyde => LysW-ornithine	K05830	lysJ	M00763	map00220									
+		LysW-ornithine => ornithine	K05831	lysK	M00763	map00220									
+		) AND	) AND												
+		ornithine => proline	K01750	"ocd,argZ,E4.3.1.12"		map00330	K28013 and K27542 also catalyze this reaction but this KO is not in the version of KEGG we are using								
+		)	)												
+															
+CHO_00	"Chorismate (precursor for Trp,Phe,Tyr)"	Erythrose-4P + PEP => 7P-2-Dehydro-3-deoxy-D-arabino-heptonate	"(K01626,K03856,K13853)"	"aroFGH, AROA2 aroA, aroGA"	M00022	map00400	exactly the same as M00022	"(K01626,K03856,K13853) (((K01735,K13829) ((K03785,K03786) K00014,K13832)),K13830) ((K00891,K13829) (K00800,K24018),K13830) K01736"							
+		7P-2-Dehydro-3-deoxy-D-arabino-heptonate => 3-Dehydroquinate => 3-Dehydro-shikimate => Shikimate	"(((K01735,K13829) ((K03785,K03786) K00014,K13832)),K13830)"	"(((aroB,aroKB) ((aroD,aroQ) aroE,aroDE)),ARO1)"	M00022	map00400									
+		Shikimate => Shikimate 3-phosphate => 5-O-(1-Carboxyvinyl)-3-phosphoshikimate	"((K00891,K13829) (K00800,K24018),K13830)"	"((aroK,aroKB) (aroA,K24018),ARO1)"	M00022	map00400									
+		5-O-(1-Carboxyvinyl)-3-phosphoshikimate => Chorismate	K01736	aroC	M00022	map00400									
+															
+TRP_00	Tryptophan	Chorismate => anthranilate => N-(5-Phospho-beta-D-ribosyl)-anthranilate	"(((K01657+K01658,K13503,K13501,K01656) K00766),K13497)"	"TRP3, TRP1, trpE, trpG, trpEG, trpGD, trpD"	M00023	map00400	exactly the same as M00023	"(((K01657+K01658,K13503,K13501,K01656)ÊK00766),K13497) (((K01817,K24017) (K01656,K01609)),K13498,K13501) (K01695+(K01696,K06001),K01694)"							
+		N-(5-Phospho-beta-D-ribosyl)-anthranilate => 1-(20carboxyphenylamino)-1'-deoxy-D-ribulose-5-phosphate => (3-Indoyl)-glycerolphosphate	"(((K01817,K24017) (K01656,K01609)),K13498,K13501)"	"trpF, trpCF, trpC, priA"	M00023	map00400									
+		(3-Indoyl)-glycerolphosphate => tryptophan	"(K01695+(K01696,K06001),K01694)"	"trpA, trpB, trpB"	M00023	map00400									
+															
+PHE_00	Phenylalanine	Chorismate => Prephenate	"(K01850,K04092,K14187,K04093,K04516,K06208,K06209,K14170)"	"E5.4.99.5, tryA1, tryA, pheA1, AROA1 aroa, aroH, pheB, pheA"	M00024/M00910	map00400	K14170 is repeated here and next step	"(K01850,K04092,K14187,K04093,K04516,K06208,K06209,K14170) (((K01713,K04518,K05359,K14170) (K00832,K00838)),(K15849 K05359))"							
+		AND ((	AND ((												
+		Prephenate => Phenyl-pyruvate	"(K01713,K04518,K05359,K14170)"	"pheA2, pheA, pheC, ADT PDT"	M00024	map00400	K14170 is repeated here and previous step								
+		Phenyl-pyruvate => Phenylalanine	"(K00832,K00838)"	"tryB, ARO8"	M00024	map00400									
+		) OR (	) OR (												
+		Prephenate => L-Arogenate	K15849	"PAT, AAT"	M00910	map00400									
+		L-Arogenate => Phenylalanine	K05359	"ADT, PDT"	M00910	map00400									
+		))	))												
+															
+TYR_00	Tyrosine	Chorismate => Prephenate	"(K01850,K04092,K14187,K04093,K04516,K06208,K06209,K14170)"	"E5.4.99.5, tryA1, tryA, pheA1, AROA1 aroa, aroH, pheB, pheA"	M00025/M00040	map00400	K14187 is repeated here and next step	"(K01850,K04092,K14187,K04093,K04516,K06208,K06209,K14170) (((K04517,K00211,K14187) (K00832,K00838)),((K00832,K15849) (K00220,K24018,K15227)))"							
+		AND ((	AND ((												
+		Prephenate => 4-Hydroxy-phenylpyruvate	"(K04517,K00211,K14187)"	"tyrA2,TYR1,tyrA"	M00025	map00400	K14187 is repeated here and previous step								
+		4-Hydroxy-phenylpyruvate => tyrosine	"(K00832,K00838)"	"tryB, ARO8"	M00025	map00400									
+		) OR (	) OR (												
+		Prephenate => L-Arogenate	"(K00832,K15849)"	"tryB, PAT AAT"	M00040	map00400									
+		 L-Arogenate => tyrosine	"(K00220,K24018,K15227)"	"tryC, K24018, TRYAAT"	M00040	map00400									
+		))	))												
+															
+HIS_00	Histidine	PRPP => Phosphoribosyl-ATP	(K00765-K02502)	hisG-hisZ	M00026	map00340	exactly the same as M00026	"(K00765-K02502) (K01523 K01496,K11755,K14152) (K01814,K24017) (K02501+K02500,K01663) ((K01693 K00817 (K04486,K05602,K18649)),(K01089 K00817)) (K00013,K14152)"							
+		Phosphoribosyl-ATP => Phosphoribosyl-AMP => Phosphoribosyl-formimino-AICAR-P	"(K01523 K01496,K11755,K14152)"	"hisE, hisI, hisIE, HIS4"	M00026	map00340									
+		Phosphoribosyl-formimino-AICAR-P => Phosphoribulosyl-formimino-AICAR-P	"(K01814,K24017)"	"hisA, priA"	M00026	map00340									
+		Phosphoribulosyl-formimino-AICAR-P => Imidazole-glycerol-3P	"(K02501+K02500,K01663)"	"hisH+hisF, HIS7"	M00026	map00340									
+		Imidazole-glycerol-3P => Imidazole-acetol-P => L-Histidinol-P => L-Histidinol	"((K01693 K00817 (K04486,K05602,K18649)),(K01089 K00817))"	"hisB, hisC, E3.1.3.15B, hisN, IMPL2"	M00026	map00340									
+		L-Histidinol => L-Histidinal => histidine	"(K00013,K14152)"	"hisD, HIS4"	M00026	map00340									

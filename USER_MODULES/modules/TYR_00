@@ -1,0 +1,38 @@
+ENTRY       TYR_00
+NAME        Tyrosine biosynthesis
+DEFINITION  (K01850,K04092,K14187,K04093,K04516,K06208,K06209,K14170) (((K04517,K00211,K14187) (K00832,K00838)),((K00832,K15849) (K00220,K24018,K15227)))
+ORTHOLOGY   K24018  cyclohexadieny/prephenate dehydrogenase / 3-phosphoshikimate 1-carboxyvinyltransferase [EC:1.3.1.43 1.3.1.12 2.5.1.19]
+            K00832  aromatic-amino-acid transaminase [EC:2.6.1.57]
+            K15849  bifunctional aspartate aminotransferase and glutamate/aspartate-prephenate aminotransferase [EC:2.6.1.1 2.6.1.78 2.6.1.79]
+            K04092  chorismate mutase [EC:5.4.99.5]
+            K04516  chorismate mutase [EC:5.4.99.5]
+            K14170  chorismate mutase / prephenate dehydratase [EC:5.4.99.5 4.2.1.51]
+            K06208  chorismate mutase [EC:5.4.99.5]
+            K15227  arogenate dehydrogenase (NADP+), plant [EC:1.3.1.78]
+            K00211  prephenate dehydrogenase (NADP+) [EC:1.3.1.13]
+            K06209  chorismate mutase [EC:5.4.99.5]
+            K00838  aromatic amino acid aminotransferase I / 2-aminoadipate transaminase [EC:2.6.1.57 2.6.1.39 2.6.1.27 2.6.1.5]
+            K01850  chorismate mutase [EC:5.4.99.5]
+            K14187  chorismate mutase / prephenate dehydrogenase [EC:5.4.99.5 1.3.1.12]
+            K04517  prephenate dehydrogenase [EC:1.3.1.12]
+            K04093  chorismate mutase [EC:5.4.99.5]
+            K00220  cyclohexadieny/prephenate dehydrogenase [EC:1.3.1.43 1.3.1.12]
+CLASS       User modules; Biosynthesis; Amino Acid Biosynthesis
+PATHWAY     map00400
+ANNOTATION_SOURCE  K24018  KOfam
+                   K00832  KOfam
+                   K15849  KOfam
+                   K04092  KOfam
+                   K04516  KOfam
+                   K14170  KOfam
+                   K06208  KOfam
+                   K15227  KOfam
+                   K00211  KOfam
+                   K06209  KOfam
+                   K00838  KOfam
+                   K01850  KOfam
+                   K14187  KOfam
+                   K04517  KOfam
+                   K04093  KOfam
+                   K00220  KOfam
+///

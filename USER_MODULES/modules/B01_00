@@ -1,0 +1,38 @@
+ENTRY       B01_00
+NAME        Thiamine (B1) biosynthesis
+DEFINITION  K03148+K03154 K03151 K03150,K03153 K03149 K10810 K03147 (((K00941,K00877) (K00788,K21220,K14154)),K14153,K21219) K00946
+ORTHOLOGY   K03147  phosphomethylpyrimidine synthase [EC:4.1.99.17]
+            K14154  thiamine-phosphate diphosphorylase / hydroxyethylthiazole kinase [EC:2.5.1.3 2.7.1.50]
+            K03150  2-iminoacetate synthase [EC:4.1.99.19]
+            K21219  hydroxymethylpyrimidine kinase / phosphomethylpyrimidine kinase / thiamine-phosphate diphosphorylase [EC:2.7.1.49 2.7.4.7 2.5.1.3]
+            K03154  sulfur carrier protein
+            K21220  thiamine-phosphate diphosphorylase [EC:2.5.1.3]
+            K10810  thiazole tautomerase (transcriptional regulator TenI) [EC:5.3.99.10]
+            K03148  sulfur carrier protein ThiS adenylyltransferase [EC:2.7.7.73]
+            K03149  thiazole synthase [EC:2.8.1.10]
+            K03151  tRNA uracil 4-sulfurtransferase [EC:2.8.1.4]
+            K00877  hydroxymethylpyrimidine/phosphomethylpyrimidine kinase / thiaminase [EC:2.7.1.49 2.7.4.7 3.5.99.2]
+            K03153  glycine oxidase [EC:1.4.3.19]
+            K00941  hydroxymethylpyrimidine/phosphomethylpyrimidine kinase [EC:2.7.1.49 2.7.4.7]
+            K00788  thiamine-phosphate pyrophosphorylase [EC:2.5.1.3]
+            K00946  thiamine-monophosphate kinase [EC:2.7.4.16]
+            K14153  hydroxymethylpyrimidine kinase / phosphomethylpyrimidine kinase / thiamine-phosphate diphosphorylase [EC:2.7.1.49 2.7.4.7 2.5.1.3]
+CLASS       User modules; Biosynthesis; Vitamin Biosynthesis
+PATHWAY     map04122;map00730
+ANNOTATION_SOURCE  K03147  KOfam
+                   K14154  KOfam
+                   K03150  KOfam
+                   K21219  KOfam
+                   K03154  KOfam
+                   K21220  KOfam
+                   K10810  KOfam
+                   K03148  KOfam
+                   K03149  KOfam
+                   K03151  KOfam
+                   K00877  KOfam
+                   K03153  KOfam
+                   K00941  KOfam
+                   K00788  KOfam
+                   K00946  KOfam
+                   K14153  KOfam
+///
